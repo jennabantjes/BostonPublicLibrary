@@ -65,7 +65,9 @@ nav {
     margin: 0 10px; }
 
 div {
-  display: block; }
+  background-color: #aaa;
+  display: block;
+  padding: 1em; }
   div li {
     display: inline-block;
     vertical-align: baseline;
@@ -73,13 +75,22 @@ div {
     *display: inline;
     *vertical-align: auto;
     list-style: none;
+    padding: 1em;
     vertical-align: top;
-    width: 125px; }
+    width: 12%; }
     div li img {
-      height: 100px;
-      width: 100px; }
+      width: 100%; }
     div li p {
       margin-top: 0; }
+
+.secondary-nav li {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  text-align: center;
+  width: 33%; }
 
 body {
   margin: auto;
@@ -88,7 +99,7 @@ body {
 header {
   height: 125px;
   margin: auto;
-  max-width: 1028px; }
+  max-width: 1000px; }
   header h1 {
     display: inline-block;
     vertical-align: baseline;
@@ -96,24 +107,23 @@ header {
     *display: inline;
     *vertical-align: auto; }
 
-nav {
-  margin: auto;
-  max-width: 1028px; }
-
 section {
   margin: auto;
-  max-width: 1028px; }
+  max-width: 1000px; }
 
-.features div {
+.features div, .callouts div, .updates div {
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  padding: 10px;
-  width: 31%; }
-  .features div img {
-    width: 100%; }
+  padding: 0;
+  width: 33%; }
+
+.image-rotator {
+  background-color: #ccc;
+  height: 500px;
+  margin: auto; }
 
 body {
   background-color: #f5f5f5; }
@@ -123,8 +133,3 @@ header {
 
 section {
   background-color: white; }
-
-.features div {
-  background-image: url("images/bpl-sample-small.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat; }

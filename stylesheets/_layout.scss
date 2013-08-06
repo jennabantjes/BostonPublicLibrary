@@ -6,30 +6,27 @@ body {
 header {
     height: 125px;
     margin: auto;
-    max-width: 1028px;
+    max-width: 1000px;
     h1 {
         @include inline-block;
     }
 }
 
-nav {
-    margin: auto;
-    max-width: 1028px;
-}
-
 section {
     margin: auto;
-    max-width: 1028px;
+    max-width: 1000px;
 }
 
-.features {
+.features, .callouts, .updates {
     div {
         @include inline-block;
-        padding: 10px;
-        width: 31%;
-
-        img {
-            width: 100%;
-        }
+        padding: 0;
+        width: 33%;
     }
+}
+
+.image-rotator {
+    background-color: #ccc;
+    height: 500px;
+    margin: auto;
 }

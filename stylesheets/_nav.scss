@@ -8,21 +8,31 @@ nav {
 }
 
 div {
+    background-color: #aaa;
     display: block;
+    padding: 1em;
 
         li  {
         @include inline-block;
         list-style: none;
+        padding: 1em;
         vertical-align: top;
-        width: 125px;
+        width: 12%;
 
         img {
-            height: 100px;
-            width: 100px;
+            width: 100%;
         }
 
         p {
             margin-top: 0;
         }
+    }
+}
+
+.secondary-nav {
+    li {
+        @include inline-block;
+        text-align: center;
+        width: 33%;
     }
 }
