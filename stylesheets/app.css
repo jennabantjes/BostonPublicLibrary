@@ -1,0 +1,130 @@
+/* RESETS */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+nav {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto; }
+  nav li {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    margin: 0 10px; }
+
+div {
+  display: block; }
+  div li {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    list-style: none;
+    vertical-align: top;
+    width: 125px; }
+    div li img {
+      height: 100px;
+      width: 100px; }
+    div li p {
+      margin-top: 0; }
+
+body {
+  margin: auto;
+  padding: auto; }
+
+header {
+  height: 125px;
+  margin: auto;
+  max-width: 1028px; }
+  header h1 {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto; }
+
+nav {
+  margin: auto;
+  max-width: 1028px; }
+
+section {
+  margin: auto;
+  max-width: 1028px; }
+
+.features div {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  padding: 10px;
+  width: 31%; }
+  .features div img {
+    width: 100%; }
+
+body {
+  background-color: #f5f5f5; }
+
+header {
+  background-color: white; }
+
+section {
+  background-color: white; }
+
+.features div {
+  background-image: url("images/bpl-sample-small.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat; }

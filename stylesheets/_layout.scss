@@ -1,0 +1,35 @@
+body {
+    margin: auto;
+    padding: auto;
+}
+
+header {
+    height: 125px;
+    margin: auto;
+    max-width: 1028px;
+    h1 {
+        @include inline-block;
+    }
+}
+
+nav {
+    margin: auto;
+    max-width: 1028px;
+}
+
+section {
+    margin: auto;
+    max-width: 1028px;
+}
+
+.features {
+    div {
+        @include inline-block;
+        padding: 10px;
+        width: 31%;
+
+        img {
+            width: 100%;
+        }
+    }
+}

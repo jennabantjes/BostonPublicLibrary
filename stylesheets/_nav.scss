@@ -1,0 +1,28 @@
+nav {
+    @include inline-block;
+
+    li {
+        @include inline-block;
+        margin: 0 10px;
+    }
+}
+
+div {
+    display: block;
+
+        li  {
+        @include inline-block;
+        list-style: none;
+        vertical-align: top;
+        width: 125px;
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        p {
+            margin-top: 0;
+        }
+    }
+}
