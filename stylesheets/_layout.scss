@@ -1,5 +1,5 @@
 body {
-    background: url('../images/background.jpg') 100% no-repeat;
+    //background: url('../images/background.jpg') 100% no-repeat;
     margin: auto;
     padding: auto;
 }
@@ -36,10 +36,10 @@ section {
 }
 
 .image-rotator {
-    height: 500px;
     margin: auto;
 
     h2 {
+        font-family: 'lmRoman';
         font-size: 2em;
         line-height: 5em;
         text-align: center;
@@ -48,6 +48,22 @@ section {
         background: white;
         padding: 1em;
         width: 100%;
+    }
+}
+
+div.program {
+    height: 200px;
+
+    &.adult {
+        background-image: url('../images/adult-class.jpg');
+    }
+
+    &.teen {
+        background-image: url('../images/teens.jpg');
+    }
+
+    &.kids {
+        background-image: url('../images/kids.jpg');
     }
 }
 
