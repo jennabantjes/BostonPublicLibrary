@@ -1,12 +1,22 @@
 body {
+    background: url('../images/background.jpg') 100% no-repeat;
     margin: auto;
     padding: auto;
 }
 
 header {
-    height: 125px;
     margin: auto;
     max-width: 1000px;
+
+    div.logo {
+        @include inline-block;
+        width: 9%;
+
+        img {
+            width: 100%;
+        }
+    }
+
     h1 {
         @include inline-block;
     }
@@ -26,7 +36,22 @@ section {
 }
 
 .image-rotator {
-    background-color: #ccc;
     height: 500px;
     margin: auto;
+
+    h2 {
+        font-size: 2em;
+        line-height: 5em;
+        text-align: center;
+    }
+    img {
+        background: white;
+        padding: 1em;
+        width: 100%;
+    }
+}
+
+footer {
+    margin: auto;
+    max-width: 1000px;
 }

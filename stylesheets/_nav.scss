@@ -1,5 +1,10 @@
 nav {
     @include inline-block;
+    padding: 0 1em;
+
+    h1 {
+        vertical-align: middle;
+    }
 
     li {
         @include inline-block;
@@ -8,7 +13,6 @@ nav {
 }
 
 div {
-    background-color: #aaa;
     display: block;
     padding: 1em;
 
