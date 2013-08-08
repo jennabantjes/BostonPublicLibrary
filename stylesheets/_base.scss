@@ -2,3 +2,25 @@
     display: none;
     visibility: hidden;
 }
+
+.one-of-three {
+    width: 33%;
+}
+
+.one-of-two {
+    width: 50%;
+}
+
+.one-of-four {
+    width: 25%;
+}
+
+.col {
+    float:left;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+}

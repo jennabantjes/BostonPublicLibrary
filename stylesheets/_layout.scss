@@ -11,6 +11,7 @@ header {
 
     div.logo {
         @include inline-block;
+        padding: 1em;
         width: 9%;
 
         img {
@@ -36,8 +37,22 @@ section {
     }
 }
 
+.features {
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #f7f7f7;
+    border-top: 1px solid #f7f7f7;
+    margin: auto;
+    max-width: none;
+
+    div.wrapper {
+        padding-bottom: 3em;
+        width: 100%;
+    }
+}
+
 .image-rotator {
     margin: auto;
+    position: relative;
 
     h2 {
         font-family: 'Open Sans';
@@ -70,14 +85,16 @@ div.program {
         background-image: url('../images/kids.jpg');
     }
 
-    a {
+    p {
         color: white;
-        font-size: 1.5em;
+        font-family: 'lmRoman';
+        font-size: 2.5em;
+        margin-top: 2em;
         text-align: center;
+        text-shadow: 1px 1px 3px #222;
     }
 }
 
 footer {
-    margin: auto;
-    max-width: 1000px;
+    margin-bottom: 10em;
 }

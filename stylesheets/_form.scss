@@ -1,0 +1,33 @@
+form {
+    left: 25%;
+    position: absolute;
+    top: 50%;
+}
+
+label {
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: 'lmRoman';
+    font-size: 1.5em;
+}
+
+input {
+    border: 2px solid #3A332A;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin: 1em 0;
+    padding: 0.5em;
+    position: relative;
+    width: 80%;
+}
+
+button {
+    background-color: #3A332A;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    margin-top: 3em;
+    padding: 1em 0.75em;
+    position: absolute;
+    top: 0;
+}

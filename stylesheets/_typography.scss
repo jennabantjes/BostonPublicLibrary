@@ -10,11 +10,13 @@
 }
 
 h1 {
+    color: #323232;
     font-family: 'lmRoman';
     font-size: 2.25em;
 }
 
 p, a, h2, h3, h4 {
+    color: #323232;
     font-family: 'Open Sans';
 }
 
@@ -25,4 +27,27 @@ h2 {
 
 a {
     text-decoration: none;
+}
+
+.features {
+    line-height: 3em;
+    text-align: center;
+
+    h1 {
+        line-height: 3em;
+    }
+}
+
+footer {
+    font-size: 0.8em;
+    padding: 1em;
+
+    a, p {
+        color: #323232;
+        line-height: 2em;
+    }
+    h2 {
+        color: #323232;
+        line-height: 2.15em;
+    }
 }

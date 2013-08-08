@@ -23,23 +23,35 @@ nav {
     }
 }
 
-div {
-    display: block;
-    padding: 1em;
+section.nav-dropdowns {
+    background-color: red;
+    max-width: none;
+    width: 100%;
 
-        li  {
-        @include inline-block;
-        list-style: none;
+    div {
+        max-width: 1000px;
+        margin: auto;
         padding: 1em;
-        vertical-align: top;
-        width: 12%;
 
-        img {
-            width: 100%;
-        }
+        ul {
+            padding: 0 1em;
 
-        p {
-            margin-top: 0;
+                li  {
+                @include inline-block;
+                list-style: none;
+                padding: 0.5em;
+                vertical-align: top;
+                width: 13%;
+
+                img {
+                    width: 100%;
+                }
+
+                p {
+                    font-size: 0.8em;
+                    margin-top: 0;
+                }
+            }
         }
     }
 }
