@@ -1,14 +1,25 @@
 nav {
     @include inline-block;
-    padding: 0 1em;
+    background-color: #DFC086;
+    padding: 0.5em 1em;
+    width: 100%;
 
     h1 {
         vertical-align: middle;
     }
 
-    li {
-        @include inline-block;
-        margin: 0 10px;
+    ul {
+        margin: auto;
+        width: 1000px;
+
+        li {
+            @include inline-block;
+            margin: 0 10px;
+
+            a {
+                color: white;
+            }
+        }
     }
 }
 
