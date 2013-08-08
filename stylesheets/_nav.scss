@@ -1,6 +1,6 @@
 nav {
     @include inline-block;
-    background-color: #DFC086;
+    background-color: $primary-color;
     padding: 0.5em 1em;
     width: 100%;
 

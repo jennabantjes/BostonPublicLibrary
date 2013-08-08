@@ -38,9 +38,9 @@ section {
 }
 
 .features {
-    background-color: #fcfcfc;
-    border-bottom: 1px solid #f7f7f7;
-    border-top: 1px solid #f7f7f7;
+    background-color: $lightest-gray;
+    border-bottom: $background-border-style;
+    border-top: $background-border-style;
     margin: auto;
     max-width: none;
 
