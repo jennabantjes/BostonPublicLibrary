@@ -98,7 +98,7 @@ nav {
         color: white; }
 
 section.nav-dropdowns {
-  background-color: red;
+  background-color: rgba(242, 204, 126, 0.2);
   max-width: none;
   width: 100%; }
   section.nav-dropdowns div {
@@ -114,9 +114,9 @@ section.nav-dropdowns {
         *display: inline;
         *vertical-align: auto;
         list-style: none;
-        padding: 0.5em;
+        padding: 0.3em;
         vertical-align: top;
-        width: 13%; }
+        width: 15%; }
         section.nav-dropdowns div ul li img {
           width: 100%; }
         section.nav-dropdowns div ul li p {
