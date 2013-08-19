@@ -7,7 +7,7 @@
     $('div.tours').addClass('hidden');
 
     $('a.visit').click(function(){
-        $('div.visit').toggleClass('hidden');
+        $('div.visit').slideToggle().toggleClass('hidden');
 
         $('div.search').addClass('hidden');
         $('div.exhibits').addClass('hidden');
@@ -15,7 +15,7 @@
     });
 
     $('a.search').click(function(){
-        $('div.search').toggleClass('hidden');
+        $('div.search').slideToggle().toggleClass('hidden');
 
         $('div.visit').addClass('hidden');
         $('div.exhibits').addClass('hidden');
@@ -23,7 +23,7 @@
     });
 
     $('a.exhibits').click(function(){
-        $('div.exhibits').toggleClass('hidden');
+        $('div.exhibits').slideToggle().toggleClass('hidden');
 
         $('div.search').addClass('hidden');
         $('div.visit').addClass('hidden');
@@ -31,7 +31,7 @@
     });
 
     $('a.tours').click(function(){
-        $('div.tours').toggleClass('hidden');
+        $('div.tours').slideToggle().toggleClass('hidden');
 
         $('div.search').addClass('hidden');
         $('div.exhibits').addClass('hidden');

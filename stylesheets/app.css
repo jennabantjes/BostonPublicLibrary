@@ -86,6 +86,7 @@ nav {
     vertical-align: middle; }
   nav ul {
     margin: auto;
+    position: relative;
     width: 1000px; }
     nav ul li {
       display: inline-block;
@@ -95,7 +96,8 @@ nav {
       *vertical-align: auto;
       margin: 0 10px; }
       nav ul li a {
-        color: white; }
+        color: white;
+        font-size: 1.1em; }
 
 section.nav-dropdowns {
   background-color: rgba(242, 204, 126, 0.2);
