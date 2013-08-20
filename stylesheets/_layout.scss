@@ -1,6 +1,5 @@
 body {
-    background: url('../images/background-BW.jpg') 100% no-repeat;
-    background-position: top;
+    background: url('../images/background-BW.jpg') no-repeat top center fixed;
     margin: auto;
     padding: auto;
 }
@@ -8,6 +7,7 @@ body {
 header {
     margin: auto;
     max-width: 1000px;
+    position: relative;
 
     div.logo {
         @include inline-block;
@@ -17,6 +17,13 @@ header {
         img {
             width: 100%;
         }
+    }
+
+    .sign-in {
+        padding-top: 0.5em;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
     h1 {
@@ -43,6 +50,7 @@ section {
     border-top: $background-border-style;
     margin: auto;
     max-width: none;
+    position: relative;
 
     div.wrapper {
         padding-bottom: 3em;
@@ -50,9 +58,20 @@ section {
     }
 }
 
-.image-rotator {
+.rotator {
+    height: 639px;
     margin: auto;
     position: relative;
+
+    li {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+
+        &:first-child {
+            opacity: 1;
+        }
+    }
 
     h2 {
         font-family: 'Open Sans';
@@ -65,8 +84,12 @@ section {
     img {
         background: white;
         padding: 1em;
-        width: 97%;
+        width: 100%;
     }
+}
+
+.search {
+    z-index: 999;
 }
 
 div.program {

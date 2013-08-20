@@ -1,7 +1,6 @@
 nav {
     @include inline-block;
     background-color: $primary-color;
-    padding: 0.5em 1em;
     width: 100%;
 
     h1 {
@@ -16,10 +15,20 @@ nav {
         li {
             @include inline-block;
             margin: 0 10px;
+            padding: 0.5em;
+
+            &:hover {
+                @include transition(all .2s ease);
+                background-color: $dark-tan;
+            }
 
             a {
                 color: white;
                 font-size: 1.1em;
+
+                &:hover {
+                    color: white;
+                }
             }
         }
     }

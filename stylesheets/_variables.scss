@@ -2,11 +2,15 @@
 
 $lightest-gray: #fcfcfc;
 $light-gray: #f7f7f7;
-$dark-gray: #323232;
+$gray: #483F35;
+$dark-gray: #100805;
 $tan: #DFC086;
+$dark-tan: darken($tan, 5);
+$green: #2DD963;
 
 $primary-color: $tan;
 $secondary-color: $dark-gray;
+$highlight-color: $green;
 
 $font-color: $secondary-color;
 
