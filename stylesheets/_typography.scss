@@ -9,19 +9,26 @@
     font-style: normal;
 }
 
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
 h1 {
     color: $font-color;
-    font-family: 'lmRoman';
-    font-size: 2.25em;
+    font-size: 2.25rem;
+    line-height: 3rem;
 }
 
 p, a, h2, h3, h4 {
     color: $font-color;
-    font-family: 'Open Sans';
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
@@ -34,22 +41,39 @@ a {
     }
 }
 
-.features {
-    line-height: 3em;
-    text-align: center;
+.rotator {
+        h2 {
+        font-family: 'Open Sans';
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 4rem;
+        margin: 2.5rem 1rem;
+        text-align: center;
 
-    h1 {
-        line-height: 3em;
+        @include media(max-width 745px){
+            line-height: 3rem;
+        }
     }
 }
 
+.catchphrase {
+    font-style: italic;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.features {
+    line-height: 3rem;
+    text-align: center;
+}
+
 footer {
-    font-size: 0.8em;
-    padding: 1em;
+    font-size: 0.8rem;
+    padding: 1rem;
 
     a, p {
         color: $font-color;
-        line-height: 2em;
+        line-height: 2rem;
     }
     h2 {
         color: $font-color;

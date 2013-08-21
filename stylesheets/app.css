@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /* RESETS */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -73,22 +78,13 @@ table {
 .bold {
   font-weight: 400; }
 
-.current {
-  z-index: 1; }
-
-.next {
-  z-index: 0; }
-
-.behind {
-  z-index: -1; }
-
 nav {
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  background-color: #dfc086;
+  background-color: #d8ad5d;
   width: 100%; }
   nav h1 {
     vertical-align: middle; }
@@ -104,14 +100,20 @@ nav {
       *vertical-align: auto;
       margin: 0 10px;
       padding: 0.5em; }
+      @media screen and (max-width: 500px) {
+        nav ul li {
+          margin: 0 5px; } }
       nav ul li:hover {
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
         transition: all 0.2s ease;
-        background-color: #dab672; }
+        background-color: #d3a348; }
       nav ul li a {
         color: white;
-        font-size: 1.1em; }
+        font-size: 1.1rem; }
+        @media screen and (max-width: 500px) {
+          nav ul li a {
+            font-size: 0.95rem; } }
         nav ul li a:hover {
           color: white; }
 
@@ -153,11 +155,13 @@ section.nav-dropdowns {
 body {
   background: url("../images/background-BW.jpg") no-repeat top center fixed;
   margin: auto;
+  min-width: 500px;
   padding: auto; }
 
 header {
   margin: auto;
   max-width: 1000px;
+  padding: 0.5rem 0 0.75rem 0;
   position: relative; }
   header div.logo {
     display: inline-block;
@@ -165,11 +169,14 @@ header {
     zoom: 1;
     *display: inline;
     *vertical-align: auto;
-    padding: 1em;
+    margin-right: 1rem;
+    min-width: 75px;
+    padding: 0.5rem 0.25rem 0 0.5rem;
     width: 9%; }
     header div.logo img {
-      width: 100%; }
+      min-width: 50px; }
   header .sign-in {
+    margin-right: 2rem;
     padding-top: 0.5em;
     position: absolute;
     top: 0;
@@ -179,7 +186,13 @@ header {
     vertical-align: baseline;
     zoom: 1;
     *display: inline;
-    *vertical-align: auto; }
+    *vertical-align: auto;
+    margin-bottom: 30px;
+    margin-top: 45px;
+    vertical-align: top; }
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem; } }
 
 section {
   margin: auto;
@@ -200,10 +213,20 @@ section {
   border-top: 1px solid #f7f7f7;
   margin: auto;
   max-width: none;
+  padding-top: 3rem;
   position: relative; }
   .features div.wrapper {
     padding-bottom: 3em;
     width: 100%; }
+  .features div.program {
+    margin-top: 3rem;
+    opacity: 0.9; }
+  .features a:hover div {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    box-shadow: 1px 1px 3px #837260;
+    opacity: 1; }
 
 .rotator {
   height: 639px;
@@ -215,13 +238,6 @@ section {
     width: 100%; }
     .rotator li:first-child {
       opacity: 1; }
-  .rotator h2 {
-    font-family: 'Open Sans';
-    font-size: 2em;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 4em;
-    text-align: center; }
   .rotator img {
     background: white;
     padding: 1em;
@@ -232,16 +248,19 @@ section {
 
 div.program {
   height: 200px; }
+  @media screen and (max-width: 650px) {
+    div.program {
+      margin: 1em;
+      width: 100%; } }
   div.program.adult {
-    background-image: url("../images/adult-class.jpg");
+    background-color: red;
     margin-left: 1em; }
   div.program.teen {
-    background-image: url("../images/teens.jpg"); }
+    background-color: red; }
   div.program.kids {
-    background-image: url("../images/kids.jpg"); }
+    background-color: red; }
   div.program p {
     color: white;
-    font-family: 'lmRoman';
     font-size: 2.5em;
     margin-top: 2em;
     text-align: center;
@@ -257,17 +276,22 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
-h1 {
-  color: #100805;
-  font-family: 'lmRoman';
-  font-size: 2.25em; }
+html {
+  font-size: 100%; }
 
-p, a, h2, h3, h4 {
-  color: #100805;
+body {
   font-family: 'Open Sans'; }
 
+h1 {
+  color: #100805;
+  font-size: 2.25rem;
+  line-height: 3rem; }
+
+p, a, h2, h3, h4 {
+  color: #100805; }
+
 h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 300; }
 
 a {
@@ -278,38 +302,84 @@ a {
     transition: all 0.2s linear;
     color: #2dd963; }
 
-.features {
-  line-height: 3em;
+.rotator h2 {
+  font-family: 'Open Sans';
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 4rem;
+  margin: 2.5rem 1rem;
   text-align: center; }
-  .features h1 {
-    line-height: 3em; }
+  @media screen and (max-width: 745px) {
+    .rotator h2 {
+      line-height: 3rem; } }
+
+.catchphrase {
+  font-style: italic;
+  font-weight: 400;
+  white-space: nowrap; }
+
+.features {
+  line-height: 3rem;
+  text-align: center; }
 
 footer {
-  font-size: 0.8em;
-  padding: 1em; }
+  font-size: 0.8rem;
+  padding: 1rem; }
   footer a, footer p {
     color: #100805;
-    line-height: 2em; }
+    line-height: 2rem; }
   footer h2 {
     color: #100805;
     line-height: 2.15em; }
 
 form.search {
-  left: 21%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  right: 14%;
+  padding: 1rem 7rem 3rem 3rem;
   position: absolute;
-  top: 50%; }
+  top: 42%; }
+  @media screen and (max-width: 930px) {
+    form.search {
+      left: 0;
+      margin: 0 1rem 0 2.2rem;
+      top: 35%;
+      width: 90%; } }
+  @media screen and (max-width: 700px) {
+    form.search {
+      padding: 1rem 7rem 3rem 2rem; } }
+  @media screen and (max-width: 643px) {
+    form.search {
+      top: 71%; } }
+  @media screen and (max-width: 515px) {
+    form.search {
+      margin: 0 1rem 0 1.2rem; } }
   form.search label {
-    border-bottom: 1px solid white;
     color: white;
-    font-family: 'lmRoman'; }
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px #483f35; }
   form.search input {
-    font-size: 1.5em;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.5rem;
     position: relative; }
+    @media screen and (max-width: 800px) {
+      form.search input {
+        font-size: 1.25rem; } }
+    @media screen and (max-width: 600px) {
+      form.search input {
+        font-size: 1rem;
+        padding: 0.8rem 0.5rem; } }
   form.search button {
-    margin-top: 3em;
-    padding: 1em 0.75em;
+    border-radius: 0 5px 5px 0;
+    margin: 3.3rem 2.3rem 0 0;
+    padding: 1rem 0.75rem;
     position: absolute;
+    right: 0;
     top: 0; }
+    @media screen and (max-width: 800px) {
+      form.search button {
+        padding: 0.8rem 0.75rem; } }
 
 form.get-email input {
   margin: 1em 0; }
@@ -318,7 +388,7 @@ input {
   border: 1px solid #100805;
   border-radius: 5px;
   padding: 0.5em;
-  width: 90%; }
+  width: 100%; }
 
 label {
   font-family: 'Open Sans';

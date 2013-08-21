@@ -1,24 +1,64 @@
 form.search {
-    left: 21%;
+    background: rgba(0,0,0,0.5);
+    border-radius: 1rem;
+    right: 14%;
+    padding: 1rem 7rem 3rem 3rem;
     position: absolute;
-    top: 50%;
+    top: 42%;
+
+
+    @include media(max-width 930px){
+        left: 0;
+        margin: 0 1rem 0 2.2rem;
+        top: 35%;
+        width: 90%;
+    }
+
+    @include media(max-width 700px){
+        padding: 1rem 7rem 3rem 2rem;
+    }
+
+    @include media(max-width 643px){
+        top: 71%;
+    }
+
+    @include media(max-width 515px){
+        margin: 0 1rem 0 1.2rem;
+    }
 
     label {
-        border-bottom: 1px solid white;
         color: white;
-        font-family: 'lmRoman';
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-shadow: 1px 1px 1px $gray;
     }
 
     input {
-        font-size: 1.5em;
+        border-radius: 5px 0 0 5px;
+        font-size: 1.5rem;
         position: relative;
+
+        @include media(max-width 800px){
+            font-size: 1.25rem;
+        }
+
+        @include media(max-width 600px){
+            font-size: 1rem;
+            padding: 0.8rem 0.5rem;
+        }
     }
 
     button {
-        margin-top: 3em;
-        padding: 1em 0.75em;
+        border-radius: 0 5px 5px 0;
+        margin: 3.3rem 2.3rem 0 0;
+        padding: 1rem 0.75rem;
         position: absolute;
+        right: 0;
         top: 0;
+
+        @include media(max-width 800px){
+            padding: 0.8rem 0.75rem;
+        }
     }
 }
 
@@ -32,7 +72,7 @@ input {
     border: $input-border-style;
     border-radius: 5px;
     padding: 0.5em;
-    width: 90%;
+    width: 100%;
 }
 
 label {
