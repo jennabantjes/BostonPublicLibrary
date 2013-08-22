@@ -1,7 +1,7 @@
 body {
     background: url('../images/background-BW.jpg') no-repeat top center fixed;
     margin: auto;
-    min-width: 500px;
+    min-width: 480px;
     padding: auto;
 }
 
@@ -13,13 +13,14 @@ header {
 
     div.logo {
         @include inline-block;
-        margin-right: 1rem;
-        min-width: 75px;
+        margin-right: 0.5rem;
+        min-width: 80px;
         padding: 0.5rem 0.25rem 0 0.5rem;
         width: 9%;
 
         img {
             min-width: 50px;
+            width: 100%;
         }
     }
 
@@ -32,13 +33,21 @@ header {
     }
 
     h1 {
+        @include transition(all 0.5s linear);
         @include inline-block;
+        font-family: 'lmRoman';
+        font-size: 3rem;
+        line-height: 2rem;
         margin-bottom: 30px;
         margin-top: 45px;
         vertical-align: top;
 
-        @include media(max-width 600px){
-            font-size: 1.8rem;
+        @include media(max-width 1000px){
+            font-size: 2.5rem;
+        }
+
+        @include media(max-width 550px){
+            font-size: 2.15rem;
         }
     }
 }
@@ -53,41 +62,6 @@ section {
         @include inline-block;
         padding: 0;
         width: 32%;
-    }
-}
-
-.features {
-    background-color: $lightest-gray;
-    border-bottom: $background-border-style;
-    border-top: $background-border-style;
-    margin: auto;
-    max-width: none;
-    padding-top: 3rem;
-    position: relative;
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    div.wrapper {
-        padding-bottom: 3em;
-        width: 100%;
-    }
-
-    div.program {
-        opacity: 0.9;
-
-        &.adult {
-            margin-top: 3rem;
-        }
-    }
-
-    a:hover {
-        div {
-            @include transition(all 0.2s linear);
-            box-shadow: 1px 1px 3px lighten($gray, 20);
-            opacity: 1;
-        }
     }
 }
 
@@ -117,17 +91,46 @@ section {
     z-index: 999;
 }
 
-div.program {
-    height: 200px;
+.features {
+    background-color: $lightest-gray;
+    border-bottom: $background-border-style;
+    border-top: $background-border-style;
+    margin: auto;
+    max-width: none;
+    padding-top: 3rem;
+    position: relative;
 
-    @include media(max-width 650px){
-        margin: 1em;
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    div.wrapper {
+        padding-bottom: 3em;
         width: 100%;
+    }
+
+    a:hover {
+        div {
+            @include transition(all 0.2s linear);
+            opacity: 1;
+        }
+    }
+}
+
+div.program {
+    @include transition(all 0.5s linear);
+    height: 200px;
+    opacity: 0.9;
+
+    @include media(max-width 700px){
+        margin: 1em;
+        width: 94%;
     }
 
     &.adult {
         background: url('../images/adult-class.jpg') no-repeat;
         margin-left: 1em;
+        margin-top: 3rem;
     }
 
     &.teen {
@@ -147,9 +150,66 @@ div.program {
     }
 }
 
+.events {
+    text-align: center;
+    padding-top: 3rem;
+
+    a:hover {
+        div {
+            @include transition(all 0.2s linear);
+            opacity: 1;
+        }
+    }
+}
+
+div.event {
+    @include transition(all 0.5s linear);
+    @include inline-block;
+    height: 170px;
+    opacity: 0.9;
+    vertical-align: bottom;
+    width: 24%;
+
+    @include media(max-width 900px){
+        width: 49%;
+    }
+
+    p {
+        background: rgba(0,0,0,0.5);
+        color: white;
+
+        &:first-child {
+            margin-top: 6rem;
+        }
+    }
+}
+
+#event-1 {
+    background: url('../images/event-1.jpg') no-repeat;
+    background-size: 100%;
+    margin-top: 3rem;
+}
+
+#event-2 {
+    background: url('../images/event-2.jpg') no-repeat;
+    background-size: 100%;
+}
+
+#event-3 {
+    background: url('../images/event-3.jpg') no-repeat;
+    background-size: 100%;
+}
+
+#event-4 {
+    background: url('../images/event-4.jpg') no-repeat;
+    background-size: 100%;
+}
+
 footer {
     background-color: white;
-    
+    margin-bottom: 3rem;
+    width: 100%;
+
     section {
         margin-bottom: 3rem;
     }

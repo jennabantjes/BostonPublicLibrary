@@ -27,6 +27,10 @@ p, a, h2, h3, h4 {
     color: $font-color;
 }
 
+p {
+    line-height: 1.5rem;
+}
+
 h2 {
     font-size: 1.5rem;
     font-weight: 300;
@@ -42,7 +46,8 @@ a {
 }
 
 .rotator {
-        h2 {
+    h2 {
+        @include transition(all 0.5s linear);
         font-family: 'Open Sans';
         font-size: 1.8rem;
         font-weight: 300;
@@ -52,6 +57,10 @@ a {
 
         @include media(max-width 745px){
             line-height: 3rem;
+        }
+
+        @include media(max-width 550px){
+            font-size: 1.5rem;
         }
     }
 }
