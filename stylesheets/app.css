@@ -57,6 +57,10 @@ table {
 
 .one-of-three {
   width: 33%; }
+  @media screen and (max-width: 850px) {
+    .one-of-three {
+      margin: 1rem 0;
+      width: 49%; } }
 
 .one-of-two {
   width: 50%; }
@@ -108,9 +112,9 @@ nav {
       vertical-align: middle;
       width: 24%; }
       nav ul li:hover {
-        -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-        transition: all 0.2s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
         background-color: #d3a348; }
       nav ul li:first-child {
         border-left: 1px solid #d3a348; }
@@ -148,17 +152,19 @@ section.nav-dropdowns {
         zoom: 1;
         *display: inline;
         *vertical-align: auto;
+        border: 1px solid rgba(242, 204, 126, 0.2);
         list-style: none;
         margin-bottom: 0.5rem;
         padding: 0.3em;
         vertical-align: top;
         width: 19.5%; }
         section.nav-dropdowns div ul li:hover {
-          -webkit-transition: all 0.2 ease;
-          -moz-transition: all 0.2 ease;
-          transition: all 0.2 ease;
-          background-color: rgba(242, 204, 126, 0.4);
-          border-radius: 5px; }
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          background-color: rgba(242, 204, 126, 0.3);
+          border: 1px solid #d8ad5d;
+          color: black; }
         @media screen and (max-width: 720px) {
           section.nav-dropdowns div ul li {
             width: 32%; } }
@@ -271,32 +277,32 @@ section {
   border-top: 1px solid #f7f7f7;
   margin: auto;
   max-width: none;
-  padding-top: 3rem;
+  padding: 3rem 1rem;
   position: relative; }
   .features h1 {
     font-size: 1.8rem; }
   .features div.wrapper {
-    padding-bottom: 3em;
     width: 100%; }
   .features a:hover div {
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     transition: all 0.2s linear;
+    border: 2px solid #c8bfb4;
     opacity: 1; }
 
 div.program {
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   transition: all 0.5s linear;
+  border: 2px solid white;
   height: 200px;
   opacity: 0.9; }
   @media screen and (max-width: 700px) {
     div.program {
-      margin: 1em;
+      margin: 0.5rem 1rem;
       width: 94%; } }
   div.program.adult {
     background: url("../images/adult-class.jpg") no-repeat;
-    margin-left: 1em;
     margin-top: 3rem; }
   div.program.teen {
     background: url("../images/teens.jpg") no-repeat; }
@@ -310,12 +316,13 @@ div.program {
     text-shadow: 1px 1px 3px #222; }
 
 .events {
-  text-align: center;
-  padding-top: 3rem; }
+  padding: 3rem 0;
+  text-align: center; }
   .events a:hover div {
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     transition: all 0.2s linear;
+    border: 2px solid #c8bfb4;
     opacity: 1; }
 
 div.event {
@@ -327,13 +334,15 @@ div.event {
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  height: 170px;
+  border: 2px solid white;
+  height: 150px;
+  margin: 5px 0px;
   opacity: 0.9;
   vertical-align: bottom;
   width: 24%; }
   @media screen and (max-width: 900px) {
     div.event {
-      width: 49%; } }
+      width: 48%; } }
   div.event p {
     background: rgba(0, 0, 0, 0.5);
     color: white; }
@@ -360,9 +369,26 @@ div.event {
 footer {
   background-color: white;
   margin-bottom: 3rem;
+  overflow: auto;
   width: 100%; }
   footer section {
     margin-bottom: 3rem; }
+
+.social-media {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto; }
+
+.links {
+  margin-right: 2rem;
+  width: 46%; }
+  .links li {
+    border-top: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7; }
+    .links li:hover {
+      background-color: #f7f7f7; }
 
 @font-face {
   font-family: 'lmRoman';
@@ -422,6 +448,10 @@ a {
   font-weight: 400;
   white-space: nowrap; }
 
+.date {
+  font-size: 0.8rem;
+  text-transform: uppercase; }
+
 .features {
   line-height: 3rem;
   text-align: center; }
@@ -434,9 +464,12 @@ footer {
     line-height: 2rem; }
   footer h2 {
     color: #100805;
-    line-height: 2.15em; }
+    line-height: 2.5rem; }
 
 form.search {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   right: 14%;
@@ -472,11 +505,11 @@ form.search {
         font-size: 1.25rem; } }
     @media screen and (max-width: 600px) {
       form.search input {
-        font-size: 1rem;
+        font-size: 0.95rem;
         padding: 0.8rem 0.5rem; } }
   form.search button {
     border-radius: 0 5px 5px 0;
-    margin: 3.3rem 2.3rem 0 0;
+    margin: 3.6rem 2.3rem 0 0;
     padding: 1rem 0.75rem;
     position: absolute;
     right: 0;
@@ -485,8 +518,11 @@ form.search {
       form.search button {
         padding: 0.8rem 0.75rem; } }
 
-form.get-email input {
-  margin: 1em 0; }
+form.get-email {
+  vertical-align: top;
+  width: 32%; }
+  form.get-email input {
+    margin: 1em 0; }
 
 input {
   border: 1px solid #100805;
@@ -496,9 +532,9 @@ input {
 
 label {
   font-family: 'Open Sans';
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 300;
-  line-height: 2em; }
+  line-height: 2.5rem; }
 
 button {
   background-color: #100805;
@@ -507,4 +543,8 @@ button {
   color: white;
   font-size: 1em; }
   button:hover {
-    background-color: #371b11; }
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-color: #371b11;
+    cursor: pointer; }

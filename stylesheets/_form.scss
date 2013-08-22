@@ -1,4 +1,5 @@
 form.search {
+    @include transition(all 0.2s ease);
     background: rgba(0,0,0,0.5);
     border-radius: 1rem;
     right: 14%;
@@ -38,31 +39,34 @@ form.search {
         font-size: 1.5rem;
         position: relative;
 
-        @include media(max-width 800px){
+        @include media(max-width 800px) {
             font-size: 1.25rem;
         }
 
-        @include media(max-width 600px){
-            font-size: 1rem;
+        @include media(max-width 600px) {
+            font-size: 0.95rem;
             padding: 0.8rem 0.5rem;
         }
     }
 
     button {
         border-radius: 0 5px 5px 0;
-        margin: 3.3rem 2.3rem 0 0;
+        margin: 3.6rem 2.3rem 0 0;
         padding: 1rem 0.75rem;
         position: absolute;
         right: 0;
         top: 0;
 
-        @include media(max-width 800px){
+        @include media(max-width 800px) {
             padding: 0.8rem 0.75rem;
         }
     }
 }
 
 form.get-email {
+    vertical-align: top;
+    width: 32%;
+
     input {
         margin: 1em 0;
     }
@@ -77,9 +81,9 @@ input {
 
 label {
     font-family: 'Open Sans';
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 300;
-    line-height: 2em;
+    line-height: 2.5rem;
 }
 
 button {
@@ -90,6 +94,8 @@ button {
     font-size: 1em;
 
     &:hover {
+        @include transition(all 0.2s ease);
         background-color: lighten($secondary-color, 10);
+        cursor: pointer;
     }
 }

@@ -5,6 +5,11 @@
 
 .one-of-three {
     width: 33%;
+
+    @include media (max-width 850px) {
+        margin: 1rem 0;
+        width: 49%;
+    }
 }
 
 .one-of-two {
@@ -24,7 +29,7 @@
 }
 
 .col {
-    float:left;
+    float: left;
 }
 
 .wrapper {

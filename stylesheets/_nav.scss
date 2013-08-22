@@ -22,7 +22,7 @@ nav {
             width: 24%;
 
             &:hover {
-                @include transition(all .2s ease);
+                @include transition(all 0.3s ease);
                 background-color: $dark-tan;
             }
 
@@ -73,6 +73,7 @@ section.nav-dropdowns {
 
                 li  {
                 @include inline-block;
+                border: 1px solid rgba(242, 204, 126, 0.2);
                 list-style: none;
                 margin-bottom: 0.5rem;
                 padding: 0.3em;
@@ -80,9 +81,10 @@ section.nav-dropdowns {
                 width: 19.5%;
 
                 &:hover {
-                    @include transition(all 0.2 ease);
-                    background-color: rgba(242, 204, 126, 0.4);
-                    border-radius: 5px;
+                    @include transition(all 0.3s ease);
+                    background-color: rgba(242, 204, 126, 0.3);
+                    border: 1px solid $tan;
+                    color: black;
                 }
 
                 @include media(max-width 720px){

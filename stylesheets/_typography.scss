@@ -71,6 +71,11 @@ a {
     white-space: nowrap;
 }
 
+.date {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
 .features {
     line-height: 3rem;
     text-align: center;
@@ -86,6 +91,6 @@ footer {
     }
     h2 {
         color: $font-color;
-        line-height: 2.15em;
+        line-height: 2.5rem;
     }
 }

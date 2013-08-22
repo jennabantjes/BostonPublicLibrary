@@ -97,7 +97,7 @@ section {
     border-top: $background-border-style;
     margin: auto;
     max-width: none;
-    padding-top: 3rem;
+    padding: 3rem 1rem;
     position: relative;
 
     h1 {
@@ -105,13 +105,13 @@ section {
     }
 
     div.wrapper {
-        padding-bottom: 3em;
         width: 100%;
     }
 
     a:hover {
         div {
             @include transition(all 0.2s linear);
+            border: 2px solid lighten($gray, 50);
             opacity: 1;
         }
     }
@@ -119,17 +119,17 @@ section {
 
 div.program {
     @include transition(all 0.5s linear);
+    border: 2px solid white;
     height: 200px;
     opacity: 0.9;
 
-    @include media(max-width 700px){
-        margin: 1em;
+    @include media(max-width 700px) {
+        margin: 0.5rem 1rem;
         width: 94%;
     }
 
     &.adult {
         background: url('../images/adult-class.jpg') no-repeat;
-        margin-left: 1em;
         margin-top: 3rem;
     }
 
@@ -151,12 +151,13 @@ div.program {
 }
 
 .events {
+    padding: 3rem 0;
     text-align: center;
-    padding-top: 3rem;
 
     a:hover {
         div {
             @include transition(all 0.2s linear);
+            border: 2px solid lighten($gray, 50);
             opacity: 1;
         }
     }
@@ -165,13 +166,15 @@ div.program {
 div.event {
     @include transition(all 0.5s linear);
     @include inline-block;
-    height: 170px;
+    border: 2px solid white;
+    height: 150px;
+    margin: 5px 0px;
     opacity: 0.9;
     vertical-align: bottom;
     width: 24%;
 
-    @include media(max-width 900px){
-        width: 49%;
+    @include media(max-width 900px) {
+        width: 48%;
     }
 
     p {
@@ -208,9 +211,28 @@ div.event {
 footer {
     background-color: white;
     margin-bottom: 3rem;
+    overflow: auto;
     width: 100%;
 
     section {
         margin-bottom: 3rem;
+    }
+}
+
+.social-media {
+    @include inline-block;
+}
+
+.links {
+    margin-right: 2rem;
+    width: 46%;
+
+    li {
+        border-top: 1px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
+
+        &:hover {
+            background-color: $light-gray;
+        }
     }
 }
