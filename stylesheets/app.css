@@ -67,6 +67,9 @@ table {
 .three-of-four {
   width: 75%; }
 
+.two-of-three {
+  width: 66%; }
+
 .col {
   float: left; }
 
@@ -91,42 +94,51 @@ nav {
   nav ul {
     margin: auto;
     position: relative;
-    width: 1000px; }
+    max-width: 1000px; }
     nav ul li {
       display: inline-block;
       vertical-align: baseline;
       zoom: 1;
       *display: inline;
       *vertical-align: auto;
-      margin: 0 10px;
-      padding: 0.5em; }
-      @media screen and (max-width: 500px) {
-        nav ul li {
-          margin: 0 5px; } }
+      border-left: 1px solid #d3a348;
+      border-right: 1px solid #d3a348;
+      padding: 0.75em;
+      text-align: center;
+      vertical-align: middle;
+      width: 20%; }
       nav ul li:hover {
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
         transition: all 0.2s ease;
         background-color: #d3a348; }
+      nav ul li:first-child {
+        border-left: 1px solid #d3a348; }
       nav ul li a {
         color: white;
         font-size: 1.1rem; }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 590px) {
           nav ul li a {
-            font-size: 0.95rem; } }
+            font-size: 0.9rem; } }
         nav ul li a:hover {
           color: white; }
+        nav ul li a:active section.nav-dropdowns div {
+          display: block; }
 
 section.nav-dropdowns {
   background-color: rgba(242, 204, 126, 0.2);
   max-width: none;
   width: 100%; }
   section.nav-dropdowns div {
+    display: none;
     max-width: 1000px;
     margin: auto;
     padding: 1em; }
     section.nav-dropdowns div ul {
       padding: 0 1em; }
+      @media screen and (max-width: 720px) {
+        section.nav-dropdowns div ul {
+          padding: 0; } }
       section.nav-dropdowns div ul li {
         display: inline-block;
         vertical-align: baseline;
@@ -134,10 +146,19 @@ section.nav-dropdowns {
         *display: inline;
         *vertical-align: auto;
         list-style: none;
+        margin-bottom: 0.5rem;
         padding: 0.3em;
         vertical-align: top;
-        width: 15%; }
+        width: 19.5%; }
+        @media screen and (max-width: 720px) {
+          section.nav-dropdowns div ul li {
+            width: 32%; } }
+        section.nav-dropdowns div ul li a {
+          opacity: 0.9; }
+          section.nav-dropdowns div ul li a:hover {
+            opacity: 1; }
         section.nav-dropdowns div ul li img {
+          margin-bottom: 0.25rem;
           width: 100%; }
         section.nav-dropdowns div ul li p {
           font-size: 0.8em;
@@ -215,12 +236,15 @@ section {
   max-width: none;
   padding-top: 3rem;
   position: relative; }
+  .features h1 {
+    font-size: 1.8rem; }
   .features div.wrapper {
     padding-bottom: 3em;
     width: 100%; }
   .features div.program {
-    margin-top: 3rem;
     opacity: 0.9; }
+    .features div.program.adult {
+      margin-top: 3rem; }
   .features a:hover div {
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -253,21 +277,23 @@ div.program {
       margin: 1em;
       width: 100%; } }
   div.program.adult {
-    background-color: red;
+    background: url("../images/adult-class.jpg") no-repeat;
     margin-left: 1em; }
   div.program.teen {
-    background-color: red; }
+    background: url("../images/teens.jpg") no-repeat; }
   div.program.kids {
-    background-color: red; }
+    background: url("../images/kids.jpg") no-repeat; }
   div.program p {
     color: white;
-    font-size: 2.5em;
-    margin-top: 2em;
+    font-size: 2.5rem;
+    margin-top: 2rem;
     text-align: center;
     text-shadow: 1px 1px 3px #222; }
 
 footer {
-  margin-bottom: 10em; }
+  background-color: white; }
+  footer section {
+    margin-bottom: 3rem; }
 
 @font-face {
   font-family: 'lmRoman';
@@ -350,7 +376,7 @@ form.search {
       padding: 1rem 7rem 3rem 2rem; } }
   @media screen and (max-width: 643px) {
     form.search {
-      top: 71%; } }
+      top: 72%; } }
   @media screen and (max-width: 515px) {
     form.search {
       margin: 0 1rem 0 1.2rem; } }

@@ -65,14 +65,21 @@ section {
     padding-top: 3rem;
     position: relative;
 
+    h1 {
+        font-size: 1.8rem;
+    }
+
     div.wrapper {
         padding-bottom: 3em;
         width: 100%;
     }
 
     div.program {
-        margin-top: 3rem;
         opacity: 0.9;
+
+        &.adult {
+            margin-top: 3rem;
+        }
     }
 
     a:hover {
@@ -119,30 +126,31 @@ div.program {
     }
 
     &.adult {
-        //background-image: url('../images/adult-class.jpg');
-        background-color: red;
+        background: url('../images/adult-class.jpg') no-repeat;
         margin-left: 1em;
     }
 
     &.teen {
-        background-color: red;
-        //background-image: url('../images/teens.jpg');
+        background: url('../images/teens.jpg') no-repeat;
     }
 
     &.kids {
-        background-color: red;
-        //background-image: url('../images/kids.jpg');
+        background: url('../images/kids.jpg') no-repeat;
     }
 
     p {
         color: white;
-        font-size: 2.5em;
-        margin-top: 2em;
+        font-size: 2.5rem;
+        margin-top: 2rem;
         text-align: center;
         text-shadow: 1px 1px 3px #222;
     }
 }
 
 footer {
-    margin-bottom: 10em;
+    background-color: white;
+    
+    section {
+        margin-bottom: 3rem;
+    }
 }
