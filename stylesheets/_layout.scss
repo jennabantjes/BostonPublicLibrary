@@ -224,15 +224,21 @@ footer {
 }
 
 .links {
-    margin-right: 2rem;
+    margin-right: 1rem;
     width: 46%;
 
     li {
+        @include transition(all 0.3s ease);
         border-top: 1px solid $light-gray;
         border-bottom: 1px solid $light-gray;
+        padding: 0.15rem;
 
         &:hover {
             background-color: $light-gray;
+
+            a {
+                color: $highlight-color;
+            }
         }
     }
 }

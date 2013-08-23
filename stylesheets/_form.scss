@@ -70,6 +70,15 @@ form.get-email {
     input {
         margin: 1em 0;
     }
+
+    button {
+        padding: 0.5rem;
+
+        &:hover {
+            background-color: $highlight-color;
+            border-color: $highlight-color;
+        }
+    }
 }
 
 input {
