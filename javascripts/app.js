@@ -1,5 +1,6 @@
 
 collapseNav();
+preventDefault();
 
 setInterval(rotateImages, 4000);
 
@@ -44,7 +45,8 @@ function collapseNav(){
     $('div.exhibits').hide();
     $('div.tours').hide();
 
-    $('a.visit').click(function(){
+    $('a.visit').click(function(e){
+        e.preventDefault();
         $('div.visit').slideToggle().show();
 
         $('div.search').hide();
@@ -52,7 +54,8 @@ function collapseNav(){
         $('div.tours').hide();
     });
 
-    $('a.search').click(function(){
+    $('a.search').click(function(e){
+        e.preventDefault();
         $('div.search').slideToggle().show();
 
         $('div.visit').hide();
@@ -60,7 +63,8 @@ function collapseNav(){
         $('div.tours').hide();
     });
 
-    $('a.exhibits').click(function(){
+    $('a.exhibits').click(function(e){
+        e.preventDefault();
         $('div.exhibits').slideToggle().show();
 
         $('div.search').hide();
@@ -68,12 +72,23 @@ function collapseNav(){
         $('div.tours').hide();
     });
 
-    $('a.tours').click(function(){
+    $('a.tours').click(function(e){
+        e.preventDefault();
         $('div.tours').slideToggle().show();
 
         $('div.search').hide();
         $('div.exhibits').hide();
         $('div.visit').hide();
+    });
+}
+
+function preventDefault(){
+    $('button').click(function(e){
+        e.preventDefault();
+    });
+
+    $('a').click(function(e){
+        e.preventDefault();
     });
 }
 

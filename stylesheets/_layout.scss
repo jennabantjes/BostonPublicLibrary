@@ -33,10 +33,9 @@ header {
     }
 
     h1 {
-        @include transition(all 0.5s linear);
         @include inline-block;
-        font-family: 'lmRoman';
-        font-size: 3rem;
+        font-family: 'libre_baskervilleregular';
+        font-size: 2.5rem;
         line-height: 2rem;
         margin-bottom: 30px;
         margin-top: 45px;
@@ -118,7 +117,6 @@ section {
 }
 
 div.program {
-    @include transition(all 0.5s linear);
     border: 2px solid white;
     height: 200px;
     opacity: 0.9;
@@ -164,7 +162,6 @@ div.program {
 }
 
 div.event {
-    @include transition(all 0.5s linear);
     @include inline-block;
     border: 2px solid white;
     height: 150px;
@@ -235,6 +232,7 @@ footer {
 
         &:hover {
             background-color: $light-gray;
+            cursor: pointer;
 
             a {
                 color: $highlight-color;
