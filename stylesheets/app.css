@@ -184,7 +184,7 @@ section.nav-dropdowns {
     display: none;
     max-width: 1000px;
     margin: auto;
-    padding: 1em; }
+    padding-top: 1em; }
     section.nav-dropdowns div ul {
       padding: 0 1em; }
       @media screen and (max-width: 720px) {
