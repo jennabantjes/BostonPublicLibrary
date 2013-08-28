@@ -560,10 +560,10 @@ form.search {
     @media screen and (max-width: 600px) {
       form.search input {
         font-size: 0.95rem;
-        padding: 0.8rem 0.5rem; } }
+        padding: 0.77rem 0.5rem; } }
   form.search button {
     margin: 3.6rem 2.3rem 0 0;
-    padding: 1rem 0.75rem;
+    padding: 1.1rem 0.75rem;
     position: absolute;
     right: 0;
     top: 0; }
