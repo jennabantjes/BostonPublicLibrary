@@ -238,6 +238,17 @@ body {
   min-width: 480px;
   padding: auto; }
 
+#style-2 {
+  background: url("../images/background-3.jpg") no-repeat top center fixed;
+  background-color: #fdf9f2; }
+  #style-2 header h1 {
+    text-shadow: 0px 0px 4px #fdf9f2; }
+  #style-2 .features {
+    background-color: white; }
+  #style-2 footer {
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd; }
+
 header {
   margin: auto;
   max-width: 1000px;
@@ -254,8 +265,14 @@ header {
     padding: 0.5rem 0.25rem 0 0.5rem;
     width: 9%; }
     header div.logo img {
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      border: 1px solid #ecd7af;
       min-width: 50px;
       width: 100%; }
+      header div.logo img:hover {
+        border: 1px solid #d8ad5d; }
   header .sign-in {
     margin-right: 2rem;
     padding-top: 0.5em;
@@ -457,7 +474,8 @@ p {
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 300; }
+  font-weight: 300;
+  text-shadow: 0px 0px 3px #fdf9f2; }
 
 a {
   text-decoration: none; }
