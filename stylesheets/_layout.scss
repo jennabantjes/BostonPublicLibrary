@@ -34,7 +34,7 @@ header {
 
     h1 {
         @include inline-block;
-        font-family: 'libre_baskervilleregular';
+        font-family: 'ashburylight';
         font-size: 2.5rem;
         line-height: 2rem;
         margin-bottom: 30px;
@@ -226,12 +226,11 @@ footer {
 
     li {
         @include transition(all 0.3s ease);
-        border-top: 1px solid $light-gray;
         border-bottom: 1px solid $light-gray;
         padding: 0.15rem;
 
         &:hover {
-            background-color: $light-gray;
+            background-color: $lightest-gray;
             cursor: pointer;
 
             a {
