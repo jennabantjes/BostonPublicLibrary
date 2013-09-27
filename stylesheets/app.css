@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -52,49 +51,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.icon-facebook:before {
-  content: '\e805'; }
-
-/* '' */
-.icon-twitter:before {
-  content: '\e806'; }
-
-/* '' */
-.icon-flickr:before {
-  content: '\e804'; }
-
-/* '' */
-@font-face {
-  font-family: 'fontello';
-  src: url("../fonts/fontello.eot?28976550");
-  src: url("../fonts/fontello.eot?28976550#iefix") format("embedded-opentype"), url("../fonts/fontello.svg?28976550#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
-
 .hidden {
   display: none;
   visibility: hidden; }
@@ -128,109 +84,6 @@ table {
 
 .bold {
   font-weight: 400; }
-
-nav {
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
-  background-color: #d8ad5d;
-  width: 100%; }
-  nav h1 {
-    vertical-align: middle; }
-  nav ul {
-    margin: auto;
-    position: relative;
-    max-width: 1000px; }
-    nav ul li {
-      display: inline-block;
-      vertical-align: baseline;
-      zoom: 1;
-      *display: inline;
-      *vertical-align: auto;
-      border-left: 1px solid #d3a348;
-      border-right: 1px solid #d3a348;
-      padding: 0.75em;
-      text-align: center;
-      vertical-align: middle;
-      width: 24%; }
-      nav ul li:hover {
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-        background-color: #d3a348; }
-      nav ul li:first-child {
-        border-left: 1px solid #d3a348; }
-      nav ul li a {
-        color: white;
-        font-size: 1.1rem; }
-        @media screen and (max-width: 590px) {
-          nav ul li a {
-            font-size: 1rem; } }
-        nav ul li a:hover {
-          color: white; }
-        nav ul li a:active section.nav-dropdowns div {
-          display: block; }
-
-section.nav-dropdowns {
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-  background-color: rgba(242, 204, 126, 0.2);
-  max-width: none;
-  width: 100%; }
-  section.nav-dropdowns div {
-    display: none;
-    max-width: 1000px;
-    margin: auto;
-    padding-top: 1em; }
-    section.nav-dropdowns div ul {
-      padding: 0 1em; }
-      @media screen and (max-width: 720px) {
-        section.nav-dropdowns div ul {
-          padding: 0; } }
-      section.nav-dropdowns div ul li {
-        display: inline-block;
-        vertical-align: baseline;
-        zoom: 1;
-        *display: inline;
-        *vertical-align: auto;
-        border: 1px solid rgba(242, 204, 126, 0.2);
-        list-style: none;
-        margin-bottom: 0.5rem;
-        padding: 0.3em;
-        vertical-align: top;
-        width: 19.5%; }
-        section.nav-dropdowns div ul li:hover {
-          -webkit-transition: all 0.3s ease;
-          -moz-transition: all 0.3s ease;
-          transition: all 0.3s ease;
-          background-color: rgba(242, 204, 126, 0.3);
-          border: 1px solid #d8ad5d;
-          color: black; }
-        @media screen and (max-width: 720px) {
-          section.nav-dropdowns div ul li {
-            width: 32%; } }
-        section.nav-dropdowns div ul li a {
-          opacity: 0.9; }
-          section.nav-dropdowns div ul li a:hover {
-            opacity: 1; }
-        section.nav-dropdowns div ul li img {
-          margin-bottom: 0.25rem;
-          width: 100%; }
-        section.nav-dropdowns div ul li p {
-          font-size: 0.8em;
-          margin-top: 0; }
-
-.secondary-nav li {
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto;
-  text-align: center;
-  width: 33%; }
 
 body {
   background: url("../images/background-BW.jpg") no-repeat top center fixed;
@@ -447,6 +300,152 @@ footer {
       cursor: pointer; }
       .links li:hover a {
         color: #2dd963; }
+
+nav {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  background-color: #d8ad5d;
+  width: 100%; }
+  nav h1 {
+    vertical-align: middle; }
+  nav ul {
+    margin: auto;
+    position: relative;
+    max-width: 1000px; }
+    nav ul li {
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      border-left: 1px solid #d3a348;
+      border-right: 1px solid #d3a348;
+      padding: 0.75em;
+      text-align: center;
+      vertical-align: middle;
+      width: 24%; }
+      nav ul li:hover {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        background-color: #d3a348; }
+      nav ul li:first-child {
+        border-left: 1px solid #d3a348; }
+      nav ul li a {
+        color: white;
+        font-size: 1.1rem; }
+        @media screen and (max-width: 590px) {
+          nav ul li a {
+            font-size: 1rem; } }
+        nav ul li a:hover {
+          color: white; }
+        nav ul li a:active section.nav-dropdowns div {
+          display: block; }
+
+section.nav-dropdowns {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  background-color: rgba(242, 204, 126, 0.2);
+  max-width: none;
+  width: 100%; }
+  section.nav-dropdowns div {
+    display: none;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 1em; }
+    section.nav-dropdowns div ul {
+      padding: 0 1em; }
+      @media screen and (max-width: 720px) {
+        section.nav-dropdowns div ul {
+          padding: 0; } }
+      section.nav-dropdowns div ul li {
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        border: 1px solid rgba(242, 204, 126, 0.2);
+        list-style: none;
+        margin-bottom: 0.5rem;
+        padding: 0.3em;
+        vertical-align: top;
+        width: 19.5%; }
+        section.nav-dropdowns div ul li:hover {
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          background-color: rgba(242, 204, 126, 0.3);
+          border: 1px solid #d8ad5d;
+          color: black; }
+        @media screen and (max-width: 720px) {
+          section.nav-dropdowns div ul li {
+            width: 32%; } }
+        section.nav-dropdowns div ul li a {
+          opacity: 0.9; }
+          section.nav-dropdowns div ul li a:hover {
+            opacity: 1; }
+        section.nav-dropdowns div ul li img {
+          margin-bottom: 0.25rem;
+          width: 100%; }
+        section.nav-dropdowns div ul li p {
+          font-size: 0.8em;
+          margin-top: 0; }
+
+.secondary-nav li {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  text-align: center;
+  width: 33%; }
+
+.icon-facebook:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-twitter:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-flickr:before {
+  content: '\e804'; }
+
+/* '' */
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?28976550");
+  src: url("../fonts/fontello.eot?28976550#iefix") format("embedded-opentype"), url("../fonts/fontello.svg?28976550#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
 @font-face {
   font-family: 'ashburylight';
